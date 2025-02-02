@@ -43,7 +43,7 @@ class _LoginPageState extends State<LoginPage> {
                   children: [
                     CustomField(hintText: 'Email', controller: emailController,),
                     CustomField(hintText: 'Password', controller: passwordController, isObscuredText: true,),
-                    AuthGradientButton(buttonText: 'Sign in',)
+                    AuthGradientButton(buttonText: 'Sign in', onTap: () {},)
                   ],
                 ),
                 SizedBox(height: 15),

@@ -46,7 +46,7 @@ class _SignupPageState extends State<SignupPage> {
                   CustomField(hintText: 'Name', controller: nameController),
                   CustomField(hintText: 'Email', controller: emailController,),
                   CustomField(hintText: 'Password', controller: passwordController, isObscuredText: true,),
-                  AuthGradientButton(buttonText: 'Sign up')
+                  AuthGradientButton(buttonText: 'Sign up', onTap: (){},)
                 ],
               ),
               SizedBox(height: 15),
