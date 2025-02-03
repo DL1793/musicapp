@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../core/theme/app_pallete.dart';
 
-class AuthGradientButton extends StatelessWidget {
+class AuthGradientButton extends ConsumerWidget {
   final String buttonText;
   final VoidCallback onTap;
-  const AuthGradientButton({super.key, required this.buttonText, required this.onTap});
+  const AuthGradientButton({
+    Key? key,
+    required this.buttonText,
+    required this.onTap
+  }): super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Container(
       decoration: BoxDecoration(
         gradient: const LinearGradient(

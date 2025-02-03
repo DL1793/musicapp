@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "C:\\Work\\Mobile Applications\\musicapp\\server"
+    ]
+}
